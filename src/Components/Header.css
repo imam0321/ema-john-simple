@@ -1,0 +1,19 @@
+.header-container{
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.header-container a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 36px;
+}
+.header-container a:hover{
+  color: rgb(217, 108, 13);
+}
