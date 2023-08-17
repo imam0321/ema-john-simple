@@ -1,0 +1,44 @@
+.cart-info{
+  position: sticky;
+  top: 0;
+}
+.cart{
+  padding: 30px 20px;
+}
+.cart h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.btn{
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.btn-clear, 
+.btn-review{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  border-radius: 8px;
+}
+.btn-clear p,
+.btn-review p{
+  margin-right: 5px;
+}
+.btn-clear{
+  background-color: rgba(255, 48, 48, 100%);
+  padding: 3px 60px;
+}
+.btn-review{
+  background-color: rgba(255, 153, 0, 100%);
+  padding: 3px 46px;
+}
+.btn-clear:hover{
+  background-color: rgb(185, 3, 3);
+}
+.btn-review:hover{
+  background-color: rgb(201, 126, 13);
+}
