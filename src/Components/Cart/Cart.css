@@ -3,7 +3,7 @@
   top: 0;
 }
 .cart{
-  padding: 30px 20px;
+  padding: 30px 25px;
 }
 .cart h3{
   text-align: center;
@@ -14,8 +14,12 @@
   margin-bottom: 20px;
   margin-left: 15px;
 }
+.btn Link{
+  text-decoration: none;
+}
 .btn-clear, 
-.btn-review{
+.btn-review,
+.btn-proceed{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,4 +45,7 @@
 }
 .btn-review:hover{
   background-color: rgb(201, 126, 13);
+}
+.btn-link{
+  text-decoration: none;
 }
