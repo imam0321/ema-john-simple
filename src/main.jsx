@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import App from './App.jsx';
 import './index.css';
 import {
   createBrowserRouter,
@@ -12,6 +11,7 @@ import Shop from './Components/Shop/Shop.jsx';
 import Orders from './Components/Orders/Orders.jsx';
 import Inventory from './Components/Inventory/Inventory.jsx';
 import Login from './Components/Login/Login.jsx';
+import cartProductsLoader from './Components/Loader/cartPorductsLoader';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +24,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'orders',
-        element: <Orders></Orders>
+        element: <Orders></Orders>,
+        loader: cartProductsLoader
       },
       {
         path: 'inventory',
@@ -37,7 +38,6 @@ const router = createBrowserRouter([
     ]
   },
 ]);
-
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
