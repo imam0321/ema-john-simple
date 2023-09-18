@@ -12,14 +12,7 @@ const Header = () => {
     <nav className='header-container'>
       <img src={Logo} alt="" />
       <div className='nav-link-container'>
-        <div className='nav-link'>
-          <ActiveLink to="/">Shop</ActiveLink>
-          <ActiveLink to="/orders">Orders</ActiveLink>
-          <ActiveLink to="/inventory">Inventory</ActiveLink>
-          <ActiveLink to="/login">Login</ActiveLink>
-        </div>
-
-        <div onClick={ ()=> setOpen(!open) } className='nav-bar'>
+      <div onClick={ ()=> setOpen(!open) } className={open ? 'nav-bar-o' : 'nav-bar-c'}>
           <span>
             {
               open === true ?
@@ -28,6 +21,13 @@ const Header = () => {
             }
           </span>
         </div>
+        <div className={open ? 'nav-open' : 'nav-close'}>
+          <ActiveLink to="/">Shop</ActiveLink>
+          <ActiveLink to="/orders">Orders</ActiveLink>
+          <ActiveLink to="/inventory">Inventory</ActiveLink>
+          <ActiveLink to="/login">Login</ActiveLink>
+        </div>
+       
       </div>
     </nav>
   );
