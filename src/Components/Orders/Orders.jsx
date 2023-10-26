@@ -38,7 +38,7 @@ const Orders = () => {
           cart={cart}
           handelClearCart={handelClearCart}
           >
-           <Link className="btn-link" to='/inventory'>
+           <Link className="btn-link" to='/checkout'>
               <button className='btn-review'>
                 <p>Checkout item</p>
                 <FontAwesomeIcon icon={faArrowRight} />
