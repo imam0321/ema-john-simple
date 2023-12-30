@@ -33,10 +33,9 @@ const Header = () => {
           <ActiveLink to="/">Shop</ActiveLink>
           <ActiveLink to="/orders">Orders</ActiveLink>
           <ActiveLink to="/inventory">Inventory</ActiveLink>
-          <ActiveLink to="/login">Login</ActiveLink>
-          <ActiveLink to='/sign-up'>Sign Up</ActiveLink>
           {
-            user && <span className='text-white'>{user.email} <button onClick={handleLogOut}>LogOut</button></span>
+            user ? <span className='text-white'>{user.email} <button onClick={handleLogOut}>LogOut</button></span>:
+            <ActiveLink to="/login">Login</ActiveLink>
           }
         </div>
        

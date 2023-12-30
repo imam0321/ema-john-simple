@@ -5,6 +5,7 @@ import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
   const [error, setError] = useState("");
+  const [show, setShow] = useState(false)
   const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -42,11 +43,18 @@ const Login = () => {
         <div className="form-control">
           <label htmlFor="">Password</label>
           <input
-            type="password"
+            type={show ? 'text' : 'password'}
             name="password"
             placeholder="Password"
             required
           />
+          <p onClick={()=> setShow(!show)}>
+            <small>
+              {
+                show ? <span>Hide Password</span> : <span>Show Password</span>
+              }
+            </small>
+          </p>
         </div>
         <p className="text-error">
           <small>{error}</small>
